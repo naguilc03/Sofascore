@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Official Channel Sofascore</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    :root {
+      --primary-blue: #374df5;
+      --light-blue: #6b7cff;
+      --dark-bg: #0a0e1a;
+      --darker-bg: #050811;
+      --text-primary: #ffffff;
+      --text-secondary: #b8c5d6;
+      --gradient-primary: linear-gradient(135deg, #4a5cff, #2438e0);
+      --gradient-secondary: linear-gradient(135deg, #101733, #16214e);
+      --shadow-glow: 0 0 30px rgba(55, 77, 245, 0.45);
+    }
+
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family:'Poppins',sans-serif; background:var(--dark-bg); color:var(--text-primary); overflow-x:hidden; position:relative;}
+
+    .bg-animation {position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1; background: linear-gradient(-45deg, #05081a, #101733, #16214e, #0b1130); background-size:400% 400%; animation:gradientShift 15s ease infinite;}
+    @keyframes gradientShift {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+
+    header {position:relative; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background:var(--gradient-secondary); overflow:hidden; padding:2rem 1.5rem;}
+
+    .logo-container {position:relative; z-index:2; animation:heroFloat 3s ease-in-out infinite alternate;}
+    @keyframes heroFloat {0%{transform:translateY(0px);}100%{transform:translateY(-20px);}}
+
+    .brand-logo {width:clamp(90px,18vw,140px); height:auto; margin:0 auto 2rem; display:block; border-radius:22%; box-shadow:var(--shadow-glow);}
+
+    .logo-title {font-family:'Orbitron', monospace; font-weight:900; margin-bottom:1rem; letter-spacing:3px; line-height:1.2;}
+    .logo-title .official {display:block; font-size:clamp(1rem,3vw,1.8rem); font-weight:700; color:var(--text-secondary); letter-spacing:6px; margin-bottom:0.6rem;}
+    .logo-title .sofascore {display:block; font-size:clamp(2.4rem,8vw,5.5rem); color:var(--text-primary); text-shadow:0 0 25px rgba(55,77,245,0.7);}
+
+    .cta-button {display:inline-flex; align-items:center; gap:15px; background:var(--gradient-primary); color:#ffffff; padding:18px 45px; border-radius:50px; text-decoration:none; font-weight:600; font-size:1.1rem; letter-spacing:1px; transition:all 0.3s ease; box-shadow:var(--shadow-glow); margin-top:1.5rem;}
+    .cta-button:hover {transform:translateY(-5px) scale(1.05); box-shadow:0 15px 40px rgba(55,77,245,0.55);}
+  </style>
+</head>
+<body>
+  <div class="bg-animation"></div>
+
+  <header id="header">
+    <div class="logo-container">
+      <svg class="brand-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sofascore">
+        <rect width="100" height="100" rx="22" fill="#374df5"/>
+        <rect x="18" y="26" width="46" height="18" rx="1" fill="#ffffff"/>
+        <rect x="18" y="26" width="18" height="30" rx="1" fill="#ffffff"/>
+        <rect x="36" y="56" width="46" height="18" rx="1" fill="#ffffff"/>
+        <rect x="64" y="44" width="18" height="30" rx="1" fill="#ffffff"/>
+      </svg>
+
+      <h1 class="logo-title">
+        <span class="official">OFFICIAL CHANNEL</span>
+        <span class="sofascore">SOFASCORE</span>
+      </h1>
+
+      <a href="https://t.me/+H7B18s8voT1lODk0" class="cta-button" target="_blank" rel="noopener">
+        <i class="fab fa-telegram"></i>
+        JOIN NOW
+      </a>
+    </div>
+  </header>
+</body>
+</html>
